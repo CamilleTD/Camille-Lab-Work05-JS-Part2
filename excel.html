@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Excel</title>
+ <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+ <header>
+ <nav>
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="excel.html">Excel</a></li>
+ </ul>
+ </nav>
+ </header>
+ <main>
+    <form id="excel-form" name="excelform" onsubmit="return false;">
+        <label for="numbers">Enter your numbers separated by spaces:</label>
+        <input type="text" id="numbers" name="numbers" required><br>
+
+        <fieldset>
+            <legend>Choose an Excel Function</legend>
+            <input type="radio" id="sum" name="excel" value="AutoSum" checked>
+            <label for="sum">AutoSum</label><br>
+
+            <input type="radio" id="avg" name="excel" value="Average">
+            <label for="avg">Average</label><br>
+
+            <input type="radio" id="max" name="excel" value="Maximum">
+            <label for="max">Max</label><br>
+
+            <input type="radio" id="min" name="excel" value="Minimum">
+            <label for="min">Min</label><br>
+        </fieldset>
+
+        <button type="button" id="calculateButton">Calculate</button>
+
+    </form>
+
+    <div id="result">Result: <span id="calcResult"></span></div>
+</main>
+ <footer>
+ <p>
+ ILAC & EFREI - HTML, CSS, and JavaScript Assignment - ©️2024 Camille Tura--Durand
+ </p>
+ </footer>
+ <script src="./js/main.js"></script>
+</body>
+</html>
